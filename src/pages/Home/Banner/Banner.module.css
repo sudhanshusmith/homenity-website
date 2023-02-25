@@ -1,0 +1,81 @@
+.banner{
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(rgba(216, 170, 170, 0.8),rgba(19, 19, 19, 0.8)), url('../../../images/sliderimg/slideimg1.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--sec-nav-content-color);
+}
+
+.text{
+  padding-top: 150px;
+}
+.text p{
+  display: inline-block;
+}
+
+.static {
+  font-size: 70px;
+}
+
+.static, .detail, .action{
+  padding-left: 70px;
+}
+.action{
+  margin-top: 30px;
+}
+
+.action a{
+  font-size: 25px;
+  background-color: var(--sec-nav-bg-color);
+ padding: 8px 20px;
+ border-radius: 10px;
+ cursor: pointer;
+ text-decoration: none;
+ color: var(--sec-nav-content-color);
+}
+
+.action a:hover{
+  color: var(--sec-nav-content-color);
+  background-color: #B3005E;
+}
+.dynamic{
+  font-size: 70px;
+  margin-left: -20px;
+  font-weight: bold;
+  color: var(--sec-nav-bg-color);
+}
+
+.detail{
+  display: block;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .static, .dynamic{
+    font-size: 50px;
+  }
+
+  .static, .detail, .action{
+    padding-left: 20px;
+  }
+  .dynamic{
+    margin-left: -10px;
+  }
+
+}
+@media only screen and (max-width: 700px) {
+  .static, .dynamic{
+    font-size: 40px;
+  }
+
+  .static, .detail, .action{
+    padding-left: 20px;
+  }
+  .dynamic{
+    margin-left: -10px;
+  }
+
+}
+

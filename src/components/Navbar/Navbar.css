@@ -1,0 +1,133 @@
+/* Variables  */
+:root {
+  --sec-nav-bg-color: #E90064;
+  --sec-nav-content-color: #060047;
+
+}
+
+/* Body CSS  */
+body{
+  font-family: 'Vidaloka', serif;
+}
+
+
+/*Nav CSS  */
+.nav{
+  /* background-image: linear-gradient(180deg, rgb(118, 116, 116), rgb(120, 120, 118)); */
+  /* background-color: var(--sec-nav-bg-color); */
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+
+.nav .title{
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--sec-nav-content-color);
+}
+
+.nav .logo img{
+  width: 50px;
+  height: 50px;
+}
+
+.nav .main{
+  width: 100vw;
+}
+
+.nav .main .left{
+  width: 15%;
+  float: left;
+  padding: 3px 0 3px 12px;
+}
+
+
+.nav .main .right{
+  width: 85%;
+  float: right;
+}
+
+.nav .menu{
+  margin-bottom: 0;
+  display: flex;
+}
+
+.nav a{
+  color: var(--sec-nav-content-color);
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+}
+
+.nav .main-li{
+  list-style: none;
+  display: inline-block;
+}
+
+.nav .hamburger{
+  color: var(--sec-nav-content-color);
+  display: none;
+  z-index: 2987;
+}
+
+
+/* Drawer CSS  */
+.drawer{
+  position: fixed;
+  display: none;
+  color: var(--sec-nav-content-color);
+  background-color: var(--sec-nav-bg-color);
+  height: 100vh;
+  width: 100vw;
+}
+
+.drawer ul{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.drawer a{
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+@media only screen and (max-width: 700px){
+  .nav .main .left{
+    padding: 3px 0 3px 0px;
+  }
+
+.nav .hamburger{
+ display: flex;
+ font-size: 30px;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+}
+
+.nav .menu{
+  display: none;
+  flex-direction: column;
+}
+
+.drawer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawer .main-li{
+  list-style: none;
+  display: block;
+}
+.drawer a{
+  
+}
+
+}
+

@@ -1,0 +1,37 @@
+.statistics{
+  padding: 40px 0;
+  background: linear-gradient(rgba(180, 124, 146, 0.8), rgb(255, 95, 158,0.8));
+  color: var(--sec-nav-content-color);
+}
+
+.container{
+  height: 250px;
+}
+
+.img1{
+  width: 150px;
+
+}
+
+.img2{
+  width: 110px;
+}
+
+.img3{
+  width: 120px;
+}
+
+.img4{
+  width: 190px;
+}
+
+.num{
+  font-weight: bold;
+  z-index: -1;
+  color: var(--sec-nav-content-color);
+}
+
+.para{
+  font-size: 25px;
+  /* font-weight: bold; */
+}
