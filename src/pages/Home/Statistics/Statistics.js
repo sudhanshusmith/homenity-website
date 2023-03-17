@@ -1,13 +1,9 @@
 import React from 'react'
 import AnimatedNumbers from "react-animated-numbers";
 
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  solid,
-  regular,
-  brands,
-  icon,
-} from "@fortawesome/fontawesome-svg-core/import.macro"; // <-- import styles to be used
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 
 import client from '../../../images/statistics/clients.png'
 import eng from '../../../images/statistics/eng.png'
@@ -18,7 +14,7 @@ function Statistics(props) {
   // const [num, setNum] = React.useState(25);
   return (
     <div className={styles.statistics + " col-12 green-bor"} id="stat">
-
+<i class="fa-solid fa-buildings"></i>
     <div className='row'>
     <div className={" col-6 col-md-3 d-flex justify-content-center align-items-center black-bor flex-column item " + styles.container}>
     <div className={styles.img_box}><img src="https://www.freeiconspng.com/uploads/slide2-house-9.png" className={'img-fluid ' + styles.img1 } alt="House Designs Png" /></div>
@@ -38,7 +34,12 @@ function Statistics(props) {
     </div>
 
     <div className={" col-6 col-md-3 d-flex justify-content-center align-items-center black-bor flex-column item2 " + styles.container}>
-    <div className={styles.img_box}><img src={client} className={'img-fluid ' + styles.img2 } alt="House Designs Png" /></div>
+    <div className={styles.img_box}>
+    <FontAwesomeIcon icon={faUsers} />
+    <i class="fa-solid fa-buildings"></i>
+    <i class="fa-solid fa-buildings"></i>
+    {/* <img src={client} className={'img-fluid ' + styles.img2 } alt="House Designs Png" /> */}
+    </div>
     
       <div className={styles.num}>
       <AnimatedNumbers
@@ -89,8 +90,7 @@ function Statistics(props) {
     </div>
     </div>
 
-      
-  
+    
     </div>
   );
 }

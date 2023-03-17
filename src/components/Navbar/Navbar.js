@@ -31,7 +31,7 @@ export default function Navbar() {
               <div className="logo">
                 <img src={logo} />
               </div>
-              <h5 className="title">Homenity</h5>
+              <h5 className="title">Homanity</h5>
             </div>
           </div>
           <div className="right green-bor">

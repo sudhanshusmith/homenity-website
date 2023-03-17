@@ -7,7 +7,7 @@ export default function NavItem({ DopenHandeler }) {
         <li className="blue-bor main-li">Statistics</li>
       </a>
 
-      <a href="https://wa.me/+917870565464" class="black-bor">
+      <a to="/test" class="black-bor">
         <li className="blue-bor main-li">Contact Us</li>
       </a>
       <a href="https://wa.me/+917870565464" className="black-bor">
