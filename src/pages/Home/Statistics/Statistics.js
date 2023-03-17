@@ -35,10 +35,8 @@ function Statistics(props) {
 
     <div className={" col-6 col-md-3 d-flex justify-content-center align-items-center black-bor flex-column item2 " + styles.container}>
     <div className={styles.img_box}>
-    <FontAwesomeIcon icon={faUsers} />
-    <i class="fa-solid fa-buildings"></i>
-    <i class="fa-solid fa-buildings"></i>
-    {/* <img src={client} className={'img-fluid ' + styles.img2 } alt="House Designs Png" /> */}
+    {/* <FontAwesomeIcon icon={faUsers} /> */}
+    <img src={client} className={'img-fluid ' + styles.img2 } alt="House Designs Png" />
     </div>
     
       <div className={styles.num}>
