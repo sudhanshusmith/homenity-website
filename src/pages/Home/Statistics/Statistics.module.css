@@ -1,7 +1,7 @@
 .statistics{
   padding: 40px 0;
   background: linear-gradient(rgba(180, 124, 146, 0.8), rgb(255, 95, 158,0.8));
-  color: var(--sec-nav-content-color);
+  color: #060047;
 }
 
 .container{
@@ -28,7 +28,7 @@
 .num{
   font-weight: bold;
   z-index: -1;
-  color: var(--sec-nav-content-color);
+  color: #060047;
 }
 
 .para{

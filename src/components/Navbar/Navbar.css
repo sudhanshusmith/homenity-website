@@ -1,7 +1,7 @@
 /* Variables  */
 :root {
   --sec-nav-bg-color: #E90064;
-  /* --sec-nav-content-color: #060047; */
+  --sec-nav-theme-content-color: #060047;
   --sec-nav-content-color: white;
 
 }
