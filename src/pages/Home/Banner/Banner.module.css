@@ -1,0 +1,87 @@
+.banner {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(rgba(43, 34, 53, 0.3), rgba(45, 33, 48, 0.3)),
+    url("../../../images/sliderimg/slideimg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text {
+  padding-top: 150px;
+}
+.text p {
+  display: inline-block;
+}
+
+.static {
+  font-size: 70px;
+}
+
+.static,
+.detail,
+.action {
+  padding-left: 70px;
+}
+.action {
+  margin-top: 30px;
+}
+
+.action a {
+  font-size: 25px;
+  color: rgb(176, 109, 241);
+  background-color: rgb(242, 231, 252);
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--sec-nav-content-color);
+}
+
+.action a:hover {
+  color: var(--sec-nav-content-color);
+  background-color: rgb(176, 109, 241);
+}
+.dynamic {
+  font-size: 70px;
+  margin-left: -20px;
+  font-weight: bold;
+  color: rgb(176, 109, 241);
+}
+
+.detail {
+  display: block;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .static,
+  .dynamic {
+    font-size: 50px;
+  }
+
+  .static,
+  .detail,
+  .action {
+    padding-left: 20px;
+  }
+  .dynamic {
+    margin-left: -10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .static,
+  .dynamic {
+    font-size: 40px;
+  }
+
+  .static,
+  .detail,
+  .action {
+    padding-left: 20px;
+  }
+  .dynamic {
+    margin-left: -10px;
+  }
+}
