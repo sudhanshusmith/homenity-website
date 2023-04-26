@@ -3,7 +3,8 @@ import styles from "./Banner.module.css";
 
 function Banner(props) {
   return (
-    <div className={styles.banner}>
+   <div id='banner'>
+     <div className={styles.banner}>
       <div className="col-12 black-bor">
         {/* <div className={styles.text}>
           <div className="row  ">
@@ -57,6 +58,7 @@ function Banner(props) {
         </div>
       </div>
     </div>
+   </div>
   );
 }
 

@@ -1,17 +1,17 @@
-.banner{
+.banner {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: linear-gradient(rgba(37, 37, 37, 0.8),rgba(35, 35, 35, 0.7)), url('../../../images/sliderimg/slideimg1.jpg'); 
+  background: linear-gradient(rgba(43, 34, 53, 0.3), rgba(45, 33, 48, 0.3)),
+    url("../../../images/sliderimg/slideimg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--sec-nav-content-color);
 }
 
-.text{
+.text {
   padding-top: 150px;
 }
-.text p{
+.text p {
   display: inline-block;
 }
 
@@ -19,63 +19,69 @@
   font-size: 70px;
 }
 
-.static, .detail, .action{
+.static,
+.detail,
+.action {
   padding-left: 70px;
 }
-.action{
+.action {
   margin-top: 30px;
 }
 
-.action a{
+.action a {
   font-size: 25px;
-  background-color: var(--sec-nav-bg-color);
- padding: 8px 20px;
- border-radius: 10px;
- cursor: pointer;
- text-decoration: none;
- color: var(--sec-nav-content-color);
+  color: rgb(176, 109, 241);
+  background-color: rgb(242, 231, 252);
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--sec-nav-content-color);
 }
 
-.action a:hover{
+.action a:hover {
   color: var(--sec-nav-content-color);
-  background-color: #B3005E;
+  background-color: rgb(176, 109, 241);
 }
-.dynamic{
+.dynamic {
   font-size: 70px;
   margin-left: -20px;
   font-weight: bold;
-  color: var(--sec-nav-bg-color);
+  color: rgb(176, 109, 241);
 }
 
-.detail{
+.detail {
   display: block;
   font-size: 20px;
 }
 
 @media only screen and (max-width: 900px) {
-  .static, .dynamic{
+  .static,
+  .dynamic {
     font-size: 50px;
   }
 
-  .static, .detail, .action{
+  .static,
+  .detail,
+  .action {
     padding-left: 20px;
   }
-  .dynamic{
+  .dynamic {
     margin-left: -10px;
   }
-
 }
 @media only screen and (max-width: 700px) {
-  .static, .dynamic{
+  .static,
+  .dynamic {
     font-size: 40px;
   }
 
-  .static, .detail, .action{
+  .static,
+  .detail,
+  .action {
     padding-left: 20px;
   }
-  .dynamic{
+  .dynamic {
     margin-left: -10px;
   }
-
 }
-

@@ -1,37 +1,59 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
-import Header from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import reportWebVitals from './reportWebVitals';
+
+
 import Home from './pages/Home/Home';
-import Test from './pages/Test/Test';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
+import Plans from './pages/Plans/Plans';
+import RootLayout from './pages/RootLayout/RootLayout';
+import ErrorPage from './util/components/ErrorPage/ErrorPage';
+
 import './bootstrap.css';
 import './index.css';
+import './overwrite.css';
 
-import reportWebVitals from './reportWebVitals';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/test",
-    element: <Test />,
+    element: <RootLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "about/",
+        element: <About />,
+      },
+      {
+        path: "plans/",
+        element: <Plans />,
+      },
+      {
+        path: "contact/",
+        element: <Contact />,
+      },
+    ],
   },
 ]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <div>
-      <Header />
-      <RouterProvider router={router} />
-      </div>
+  {/* <Navbar/> */}
+  <RouterProvider router={router} />
+  {/* <Footer /> */}
   </React.StrictMode>
 );
 
